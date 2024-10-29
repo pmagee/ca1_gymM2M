@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Detail</title>
+</head>
+<body>
+    <h1>Equipment Details Page</h1>
+    <p>Name: {{ equipment.name }}</p>
+    <p>Gyms: </p>
+    {% for g in equipment.gyms.all %}
+    <li><strong>{{ g.name  }} {{ g.location }} </strong></li>
+    {% endfor %}
+
+    <p><a href="{% url 'equip_edit' equipment.pk %}">+ Edit Equipment Record</a></p>
+</body>
+</html>

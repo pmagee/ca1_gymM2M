@@ -1,0 +1,82 @@
+[
+  {
+      "model": "gym_app.gym",
+      "pk": 1,
+      "fields": {
+          "name": "FitLife Dublin",
+          "location": "Dublin, Ireland"
+      }
+  },
+  {
+      "model": "gym_app.gym",
+      "pk": 2,
+      "fields": {
+          "name": "Galway Fitness",
+          "location": "Galway, Ireland"
+      }
+  },
+  {
+      "model": "gym_app.gym",
+      "pk": 3,
+      "fields": {
+          "name": "Cork Strength",
+          "location": "Cork, Ireland"
+      }
+  },
+  {
+      "model": "gym_app.member",
+      "pk": 1,
+      "fields": {
+          "gym": 1,
+          "name": "John Doe",
+          "membership_start_date": "2023-01-15"
+      }
+  },
+  {
+      "model": "gym_app.member",
+      "pk": 2,
+      "fields": {
+          "gym": 2,
+          "name": "Mary Smith",
+          "membership_start_date": "2022-11-20"
+      }
+  },
+  {
+      "model": "gym_app.member",
+      "pk": 3,
+      "fields": {
+          "gym": 3,
+          "name": "James O'Connor",
+          "membership_start_date": "2023-02-10"
+      }
+  },
+  {
+      "model": "gym_app.equipment",
+      "pk": 1,
+      "fields": {
+          "name": "Treadmill",
+          "gyms": [1, 2]
+      }
+  },
+  {
+      "model": "gym_app.equipment",
+      "pk": 2,
+      "fields": {
+          "name": "Dumbbells",
+          "gyms": [1, 3]
+      }
+  },
+  {
+      "model": "gym_app.equipment",
+      "pk": 3,
+      "fields": {
+          "name": "Squat Rack",
+          "gyms": [2, 3]
+      }
+  }
+]
+
+
+
+
+  

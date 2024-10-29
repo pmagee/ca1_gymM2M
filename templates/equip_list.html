@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Equipment List</title>
+</head>
+<body>
+    <h1>Equipment List Page</h1>
+    {% for e in all_equip_list %}
+        <h2><a href="{% url 'equip_detail' e.pk %}">{{ e.name }}</a></h2>
+    {% endfor %}
+    <h2><a href="{% url 'equip_create' %}">+New Equipment</a></h2>
+</body>
+</html>
+

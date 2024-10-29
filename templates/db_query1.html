@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Q1</title>
+    </head>
+    <body>
+        <h1>Member in the gym the longest</h1>
+
+        {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% else %}
+            {% if member_name %}
+                <p>The member who is in the gym the longest is <strong>{{ member_name }}</strong></p>
+            {% else %}
+                <p>No data available.</p>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>
